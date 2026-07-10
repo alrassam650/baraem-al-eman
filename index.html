@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>براعم الإيمان | تحفيظ القرآن الكريم للأطفال</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ======================== الهيدر المشترك ======================== -->
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo" onclick="navigateTo('home')">🌿 براعم الإيمان</div>
+
+      <nav class="nav">
+        <button class="nav-link active" onclick="navigateTo('home')" data-page="home">الرئيسية</button>
+        <button class="nav-link" onclick="navigateTo('offers')" data-page="offers">الاستفسارات</button>
+        <button class="nav-link" onclick="navigateTo('gallery')" data-page="gallery">المعرض</button>
+      </nav>
+
+      <a href="https://wa.me/201068893929" target="_blank" class="whatsapp-header" title="تواصل معنا عبر واتساب">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="واتساب" width="24" height="24" />
+      </a>
+    </div>
+  </header>
+
+  <!-- ======================== الصفحة الرئيسية ======================== -->
+  <section class="page-section active" id="page-home">
+    <div class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>مرحباً بكم في <span class="brand-name">براعم الإيمان</span></h1>
+          <p class="hero-subtitle">
+            نرتقي بأطفالكم إلى حب القرآن الكريم وحفظه بأسلوب شيق ومبسط.
+            معلمون متخصصون، بيئة محفزة، وبرامج مصممة خصيصاً لتناسب كل الأعمار.
+          </p>
+          <div class="hero-actions">
+            <button class="btn btn-primary" onclick="navigateTo('offers')">استفسارتكم</button>
+            <a href="https://wa.me/201068893929" target="_blank" class="btn btn-whatsapp">💬 تواصل معنا</a>
+          </div>
+        </div>
+        <div class="hero-icon">
+          <span class="quran-icon">📖</span>
+        </div>
+      </div>
+    </div>
+
+    <section class="features">
+      <div class="container">
+        <h2 class="section-title">لماذا <span class="brand-name">براعم الإيمان</span>؟</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">👨‍🏫</div>
+            <h3>معلمون متخصصون</h3>
+            <p>كادر تعليمي ذو خبرة في تحفيظ القرآن للأطفال</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🎯</div>
+            <h3>برامج مخصصة</h3>
+            <p>خطط حفظ تناسب كل طفل حسب مستواه وعمره</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🏆</div>
+            <h3>متابعة مستمرة</h3>
+            <p>تقارير دورية لأولياء الأمور عن تقدم أطفالهم</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🌙</div>
+            <h3>أجواء إيمانية</h3>
+            <p>بيئة تربوية محفزة تغرس حب القرآن في النفوس</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+<!-- ======================== صفحة الاستفسارات ======================== -->
+<section class="page-section" id="page-offers">
+  <div class="offers-section">
+    <div class="container">
+      <h1 class="section-title">💬 لديك استفسار؟</h1>
+      <p class="section-desc">
+        يسعدنا الإجابة عن جميع استفساراتكم المتعلقة بحلقات تحفيظ القرآن الكريم، ونحرص على تقديم أفضل خدمة لأبنائكم.
+      </p>
+
+      <div class="offers-grid">
+        <div class="offer-card" data-offer-name="">
+          <div class="offer-badge">نحن في خدمتك</div>
+
+          <h2 class="offer-title">❓ اسأل عن أي شيء</h2>
+
+          <p class="offer-desc">
+            إذا كان لديك أي سؤال أو ترغب في معرفة المزيد عن برامج التحفيظ، فلا تتردد في التواصل معنا، وسنقوم بالرد عليك في أسرع وقت.
+          </p>
+
+          <ul class="offer-features">
+            <li>📅 ما هي مواعيد الحلقات؟</li>
+            <li>💰 كم رسوم الاشتراك؟</li>
+            <li>🧒 ما الأعمار المناسبة للتسجيل؟</li>
+            <li>🌐 هل تتوفر حلقات أونلاين؟</li>
+            <li>📖 كيف تتم متابعة مستوى الطالب؟</li>
+            <li>💬 يمكنك أيضًا طرح أي استفسار آخر.</li>
+          </ul>
+
+          <div class="offer-footer">
+            <button class="btn btn-subscribe" onclick="subscribeToOffer(this)">
+              تواصل معنا الآن
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- ======================== صفحة المعرض ======================== -->
+  <section class="page-section" id="page-gallery">
+    <div class="gallery-section">
+      <div class="container">
+        <h1 class="section-title">📸 معرض الصور والفيديوهات</h1>
+        <p class="section-desc">لحظات من رحلتنا مع أطفالنا في تحفيظ القرآن الكريم</p>
+
+        <h2 class="gallery-subtitle">🖼️ الصور</h2>
+        <div class="gallery-grid" id="imageGallery">
+          <div class="gallery-item image-item">
+          <img src="./img1.jpg">
+            <div class="gallery-caption"></div>
+          </div>
+          <div class="gallery-item image-item">
+            <img src="./img2.jpg">
+            <div class="gallery-caption"></div>
+          </div>
+          <div class="gallery-item image-item">
+            <img src="./img3.jpg">
+            <div class="gallery-caption"></div>
+          </div>
+          <div class="gallery-item image-item">
+            <img src="./img4.jpg">
+            <div class="gallery-caption"></div>
+          </div>
+          <div class="gallery-item image-item">
+            <<img src="./img5.jpg">
+            <div class="gallery-caption"></div>
+          </div>
+          <div class="gallery-item image-item">
+            <img src="./img6.jpg">
+            <div class="gallery-caption"></div>
+          </div>
+                    <div class="gallery-item image-item">
+            <img src="./img7.jpg">
+            <div class="gallery-caption"></div>
+          </div>
+        </div>
+  </section>
+
+  <!-- ======================== شريط التنقل السفلي ======================== -->
+  <nav class="bottom-nav">
+    <button class="bottom-nav-btn active" onclick="navigateTo('home')" data-page="home">
+      <span class="nav-icon">🏠</span>
+      <span>الرئيسية</span>
+    </button>
+    <button class="bottom-nav-btn" onclick="navigateTo('offers')" data-page="offers">
+      <span class="nav-icon">🎯</span>
+      <span>الاستفسارات</span>
+    </button>
+    <button class="bottom-nav-btn" onclick="navigateTo('gallery')" data-page="gallery">
+      <span class="nav-icon">📸</span>
+      <span>المعرض</span>
+    </button>
+    <a href="https://wa.me/201068893929" target="_blank" class="bottom-nav-btn" style="text-decoration: none;">
+      <span class="nav-icon">💬</span>
+      <span>واتساب</span>
+    </a>
+  </nav>
+
+  <!-- ======================== الفوتر ======================== -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 <strong>براعم الإيمان</strong> — كل الحقوق محفوظة</p>
+      <p class="footer-contact">
+        <a href="https://wa.me/201068893929" target="_blank">📱 +201068893929</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
