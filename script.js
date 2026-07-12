@@ -46,7 +46,7 @@ function navigateTo(pageName) {
  */
 function subscribeToOffer(button) {
   // الرقم بصيغة دولية بدون + أو أصفار زائدة
-  var phoneNumber = '201068893929';
+  var phoneNumber = '201121649939';
 
   // نصل إلى بطاقة العرض
   var card = button.closest('.offer-card');
